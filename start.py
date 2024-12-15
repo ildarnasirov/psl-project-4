@@ -1,6 +1,6 @@
 import streamlit as st
 from utils.init import config_page
-from utils.constants import MOVIES_STATE, REVIEW_STATE
+from utils.constants import REVIEW_STATE
 
 config_page()
 
@@ -19,7 +19,7 @@ st.markdown("""
 This project allows the user to rate 100 films on a scale of 1 to 5 and 
 receive a recommendation of 10 films based on the Item-Based Collaborative Filtering Recommender System.
 
-Please click **Start** to start reviewing movies.
+Please click **Start Review** to start reviewing movies.
 """)
 
 st.write('')

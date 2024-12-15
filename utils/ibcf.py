@@ -9,16 +9,9 @@ def fill_user(ratings = {}, length = 3706):
     
     return result
 
-def prep_rmat():
-    rmat = pd.read_csv('data/rmat.csv', index_col=0)
-    row_means = rmat.mean(axis=1, skipna=True) # skip na case
-    return rmat.sub(row_means, axis=0)
-
 def myIBCF(user_data):
     similarity_matrix = np.load('data/trimmed_similarity_matrix.npz')['trimmed_similarity_matrix']  # Load similarity matrix from step 3
     rmat_columns = pd.read_csv('data/rmat_columns.csv', header=None).squeeze().tolist()
-
-    # print(similarity_matrix['trimmed_similarity_matrix'])
 
     new_user = fill_user(user_data, similarity_matrix.shape[0])
     w = np.array(new_user).flatten()
