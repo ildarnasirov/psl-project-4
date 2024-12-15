@@ -1,6 +1,6 @@
-# 🎈 Blank app template
+# 🎈 Project 4: Streamlit App for CS 598 - PSL
 
-A simple Streamlit app template for you to modify!
+Movie Recommendation System
 
 [![Open in Streamlit](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://ildarnasirov-psl-project-4-start-7nofuz.streamlit.app/)
 
