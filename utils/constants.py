@@ -1,0 +1,5 @@
+NOT_RATED='Not Rated'
+FULL_STAR='★'
+EMPTY_STAR='☆'
+MOVIES_STATE='movies'
+REVIEW_STATE='review'
